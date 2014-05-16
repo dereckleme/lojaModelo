@@ -154,6 +154,32 @@
 
  <!--*****************************CONTEUDO TOPO*****************************-->
   <div id="topo_menu">
+    <section>
+      
+      <div id="box_logo">
+        <h1>
+          <a href="<?=$this->basePath()?>">SELETO ALIMENTOS</a>
+        </h1>
+        <p>Televendas: 611-3143</p>
+        <form action="<?php echo $this->url('publico-busca-produto'); ?>" method="get">            
+          <input placeholder="buscar produto" class="search_topo" id="search" name="p">
+          <input type="submit" value="Pesquisar" class="lupa_topo">
+        </form>
+      </div>
+
+
+
+
+
+
+
+      <div id="box_menu">
+        
+      </div>
+   </section>
+</div>
+
+  <!--<div id="topo_menu">
     <div id="menu_central">
       <a href="<?=$this->basePath()?>" title="SELETO ALIMENTOS"><h1 class="logo_seleto" title="Seleto Alimentos">SELETO ALIMENTOS</h1></a>
             
@@ -166,7 +192,7 @@
             </form>
 
                     <ul class="Menu">                    
-                      <li class="lista_menu_cafe"><!--Cafés-->
+                      <li class="lista_menu_cafe">
                           <h3><a href="#">Cafés</a></h3>
                           
                           <ul class="dropdownCafe">
@@ -195,7 +221,7 @@
                           </ul>
                       </li>
                       
-                      <li class="lista_menu_alimentos"><!--Alimentos-->
+                      <li class="lista_menu_alimentos">
                         <h3><a href="#">Alimentos</a></h3>
                           
                           <ul class="dropdownAlimento" style="min-height:300px;">
@@ -224,14 +250,14 @@
                           </ul>
                       </li>
 
-                      <li class="lista_menu_produtos"><!--Todos Produtos-->
+                      <li class="lista_menu_produtos">
                         <h3><a href="#">Todos Produtos</a></h3>
                           <ul class="dropdownProduto">
                             <li class="tt_dropdown">
                               <a class="tt_dropdown" href="#">Veja todos os produtos,<span class="ttd_dropdown"> Seleto</span>
                               </a>
                             </li>
-                                <!--Coluna 1-->
+                                
                              <li class="BoxAllFood">
                                   <ul>
                                      <li class="txtD_dropdown" style="margin-top:10px"><a class="txtD_dropdown">Mistura para bolo</a></li>
@@ -246,7 +272,7 @@
                                      <li class="VejaMaisDropdown"><a class="VejaMaisDropdown" href="">Veja Mais</a></li>
                                   </ul> 
                               </li>
-                                 <!--Coluna 2-->
+                                 
                                <li class="BoxAllFood">
                                   <ul>
                                     <li class="txtD_dropdown" style="margin-top:10px"><a class="txtD_dropdown">Achocolatados em pó</a></li>  
@@ -259,7 +285,7 @@
                                       <li class="VejaMaisDropdown"><a class="VejaMaisDropdown" href="<?=$this->basePath()?>/produto/cafe-em-po">Veja Mais</a></li>
                                   </ul> 
                                </li>
-                                  <!--Coluna 3-->
+                                  
                                <li class="BoxAllFood">
                                   <ul>
                                     <li class="txtD_dropdown" style="margin-top:10px"><a class="txtD_dropdown" href="#">Café em cápsulas</a></li>
@@ -275,7 +301,7 @@
           </div>
     </div>
 
-  </div>
+  </div>-->
 
  <!--*****************************FIM DO CONTEUDO TOPO*****************************-->
 
