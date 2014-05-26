@@ -54,30 +54,34 @@ div.container a.brand {
 }
 
 /*******************HEADER - MENU***************/
-#header { width: 100%; min-width: 1024px; float: left; background: #582700;position:fixed;z-index:999;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:#2C2C2C}
-#ContenTopoHeader { width: 1024px; margin: 0 auto;}
+#header { width: 100%; min-width: 1024px; float: left; background: #009fc0; position:fixed; z-index:999;}
+#ContenTopoHeader { width: 1024px; margin: 0 auto; position: relative;}
 #mn_topo{ width: 824px; float: left;}
-ul.mn_topo { padding: 25px 0; float: left; display: block; font-size: 12px; }
+ul.mn_topo { padding: 15px 0; float: left; display: block; font-size: 12px;}
 li.Menu_topo { display: inline;  background: url(../images/borda_menu.png) repeat-y right;  padding-right:13px; padding-left:13px; color:#FFF;}
 li.Menu_topo a{ color:#FFF;}
-li.Menu_topo a:hover{text-decoration: underline;}
+li.Menu_topo a:hover{ text-decoration: underline;}
 /******************* FIM DO HEADER - MENU***************/
 
 /******************* CESTA DO CARRINHO DE COMPRAS ***************/
-span.Cesta { width: 200px; height: 71px; float: right; background: url(../images/cesta.png) no-repeat #351903; display: block; }
-p.mc { color: #FFF; font-weight: bold; margin-left: 75px; margin-top: 0px; float: left; font-size: 14px; }
-p.valor_total { width: 150px; color: #FFF; font-weight: bold; position: relative; left: 50px; top: -9px; text-align: center; font-size: 14px; }
-img.dt_cesta { z-index: -9999; margin-left: 92px; margin-top: -11px; float: left;}
-#Box_Visor_Qtd { background: #CCC; position: absolute; }
-span.Visor_Qtd { width: auto; max-width: 52px; padding: 0 3px 0 3px; right: -61px; top: 18px; color: #FFF; font-size: 10px; position: absolute; display:inline-block; overflow: hidden; text-align: right;}
-span.Visor_Qtd { background: #ff7f25; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; border: none;}
+span.Cesta { width: 200px; height: 45px; float: right; background: url(../images/cesta.png) no-repeat #0083c0; display: block;}
+span.Cesta { background-position: 0 -15px;}
+p.mc { color: #FFF; font-weight: bold; margin-left: 85px; margin-top: -10px; float: left; font-size: 12px; }
+p.valor_total { width: 150px; color: #FFF; font-weight: bold; position: relative; left: 48px; top: -12px; text-align: center; font-size: 12px;}
+#Box_Visor_Qtd { position: absolute;}
+span.Visor_Qtd { width: auto; max-width: 52px; padding: 0 3px 0 3px; right: -61px; top: 5px; color: #FFF; font-size: 10px; position: absolute; display:inline-block; overflow: hidden; text-align: right;}
+span.Visor_Qtd { background: #006797; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; border: none;}
 /******************* FIM DA CESTA DO CARRINHO DE COMPRAS ***************/
 
 /********HEADER D0 CARRINHO DE COMPRAS, TITULOS DO PRODUTO, PREÇO, QTD*************/
-#BoxCestaForm { width: 380px; overflow: hidden; float: right; margin-right: -200px !important;}
-#box_compras { width: 380px; z-index: 200; background: #FFF; position: absolute; top: 71px; box-shadow:0 1px 5px 0 rgba(0, 0, 0, 0.3);  border-bottom: 4px solid #351903}
-ul.header_conteudo_compra { width: 330px; padding: 20px 0;  margin: 0 auto; background: #ddd; margin-top: 20px; display: block;}
-ul.header_conteudo_compra li { float: left; margin-top: -20px; color: #666; font-size: 12px;  display: inline; }
+#BoxCestaForm { position: absolute; top: 45px; right: 0;}
+
+
+#box_compras { width: 380px; display: none; float: left; z-index: 200; background: #FFF; box-shadow:0 1px 5px 0 rgba(0, 0, 0, 0.3); border-bottom: 4px solid #0083C0;}
+
+
+ul.header_conteudo_compra { width: 330px; padding: 20px 0;  margin: 0 auto; background: #009FC0; margin-top: 20px; display: block;}
+ul.header_conteudo_compra li { float: left; margin-top: -20px; color: #FFFFFF; font-size: 12px;  display: inline; }
 li.header_tt_box_produto { width: 180px; margin-left: 13px}
 li.header_tt_box_preco {  }
 li.header_tt_box_Qtd { margin-left: 25px } 
@@ -88,27 +92,29 @@ p.header_txt_Qtd_compra {  float: left;  }
 
 /************CARRINHO DE COMPRAS- DESCRIÇÃO DOS PRODUTOS, PREÇO, QTD,******************/
 ul#DescricaoPrecoQuatidade { width: 345px; margin: 0 auto; margin-top: 10px; display: block; }
-li.BoxProdutosCesta { width: 325px; float: left; display:block; margin-top: 10px; margin-left: 10px; border-bottom: solid 1px #ddd }
-#BoxDescricaoFoto { width: 180px; height: 66px; float: left; border-right: solid 1px #ddd; color: #FFF; margin-bottom: 10px; }
+li.BoxProdutosCesta { width: 325px; float: left; display:block; margin-top: 10px; margin-left: 10px; border-bottom: solid 1px #009fc0;}
+
+#BoxDescricaoFoto { width: 180px; height: 66px; float: left; border-right: solid 1px #009fc0; color: #FFF; margin-bottom: 10px; }
 span.imagem_produto_cesta { width: 50px; height: 66px; float: left; }
 p.descricao_produto_cesta { width: 115px;  margin-left: 10px; float: left; font-size: 11px; margin-top:0px; color: #333; font-weight: 700}
 p.descricao_produto_cesta:hover {text-decoration: underline;}
-#BoxDescricaoPreco { width: 80px; height: 66px; float: left; border-right: solid 1px #ddd }
-p.descricao_preco_cesta { font-size: 11px; text-align: center; color: #666; margin-top: 25px; }
-#BoxDescricaoQuatidade { width: 60px; height: 66px; float: left; text-align: center; color: #351903; }
+
+#BoxDescricaoPreco { width: 80px; height: 66px; float: left; border-right: solid 1px #009fc0;}
+p.descricao_preco_cesta { font-size: 11px; text-align: center; color: #666; margin-top: 25px;}
+
+#BoxDescricaoQuatidade { width: 60px; height: 66px; float: left; text-align: center; color: #351903;}
 p.descricao_Qtd_cesta { font-size: 11px; text-align: center; color: #666; margin-top: 25px;}
 /*FIM D0 CARRINHO DE COMPRAS - DESCRIÇÃO DOS PRODUTOS, PREÇO, QTD,*/
 
 /****************BOTÕES DO CARRINHO DE COMPRA***************/
 ul#buttonCarrinho { width: 350px; float: left; display:block; margin-top: 10px; margin-left: 10px;}
-li.ButtonCarrinhoDeCompra a {  margin-bottom: 10px; float: left; background: #582700;
- border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-transform: uppercase;
-  text-align: center; color: #fff; font-size: 12px; padding: 10px; letter-spacing: 1px}
-li.ButtonCarrinhoDeCompra a:hover { background: #351903;}
-li.ButtonFinalizarCompra a { margin-bottom: 10px; float: right; background: #ff7f25; 
-  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-transform: uppercase;
-   text-align: center; font-size: 12px; color: #FFF; padding: 10px; letter-spacing: 1px }
-li.ButtonFinalizarCompra a:hover { background: #e76509;}
+ul#buttonCarrinho li a {  margin-bottom: 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-transform: uppercase;
+text-align: center; color: #fff; font-size: 12px; padding: 10px; letter-spacing: 1px;}
+li.ButtonCarrinhoDeCompra a { float: left; background: #009FC0;}
+li.ButtonCarrinhoDeCompra a:hover { background: #16c247;}
+li.ButtonFinalizarCompra a { float: right; background: #0083C0;}
+li.ButtonFinalizarCompra a:hover { background: #16c247;}
+
 /***********FIM DOS BOTÕES DO CARRINHO DE COMPRA**********/
 
 /******************ERRO LOGIN - CADASTRO****************************/
@@ -175,25 +181,58 @@ input.Eventlogin:hover ,input.Eventcadastrar:hover {background: #e57220;}
 /*******************CONTEUDO***************/
 #geral { width: 100%; min-width: 1024px; float: left; }
 /*******************MENU***************/
-#topo_menu { width: 100%; min-width: 1024px; border-bottom: solid 1px #CCC; float: left; margin-bottom: 30px; margin-top:100px; background: #065;}
-#topo_menu > section { width: 1024px; height: 600px; float: left; background: #655; left: 50%; position: relative; margin-left: -512px;}
+#topo_menu { width: 100%; min-width: 1024px; border-bottom: solid 1px #CCC; float: left; margin-top:45px;}
+#topo_menu > section { width: 1024px; float: left; left: 50%; position: relative; margin-left: -512px;}
 
-#box_logo { width: 1024px; float: left; background: #470; position: relative;}
+#box_logo { width: 1024px; float: left; position: relative; margin-top: 10px;}
 #box_logo > h1 { float: left; padding: 0; margin: 0;}
-#box_logo > h1 a { width: 200px; height: 100px; float: left; background: #593;}
+#box_logo > h1 a { width: 250px; height: 100px; float: left; background: url(../images/logo-lojaModelo.png) no-repeat;}
+#box_logo > h1 ~ p { float: right; margin-top: 2px; color: #0083C0; text-transform: uppercase; display: block; font-weight: bold;}
 
-
-#box_logo form { width: 700px; position: absolute; top: 0; right: 0; height: 80px; background: #C22; }
-
-
-
-input.search_topo { width: 454px; padding: 15px; border: 5px solid #ff7f25; font-size: 1.125em; color:#666; background: #FFF; float: left; }
-input.lupa_topo { width: 50px; height: 56px !important; -webkit-height: 61.5px !important; background: url(../images/lupa_topo.png) no-repeat center #ff7f25; border: none; text-indent: -9999px; cursor: pointer;}
+#box_logo form { width: 750px; position: absolute; top: 35px; right: 0; height: 46px;}
+input.search_topo { width: 680px; padding: 5px; border: 5px solid #009FC0; font-size: 1.8em;
+ color:#666; background: #FFF; float: left;}
+input.lupa_topo { width: 50px; height: 46px; background: url(../images/lupa_topo.png) no-repeat center #009FC0; border: none; text-indent: -9999px; cursor: pointer;}
 
 
 
 
-#box_menu { width: 1024px; height: 100px; margin-top: 50px; float: left; background: #438;}
+#box_menu { width: 1024px; float: left; margin-bottom: 10px;}
+ul.menu { width: 1024px; padding: 0; margin: 0; float: left; position: relative;}
+ul.menu li { display: inline; position: relative; float: left;}
+ul.menu li > a.lista { position: relative; color: #FFFFFF; font-size: 3.0em; padding: 8px 10px 8px 10px; float: left; margin: 0 2px 0 3px; -webkit-transition: 0.2s ease-in; transition: 0.2s ease-in;}
+.bk-icones { background: #009FC0;}
+
+ul.menu li > a.lista:hover {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+ul.menu li:hover > a.lista {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+ul.menu li ul.submenu { width: 600px; background: #00ffba; position: absolute; left: 3px; display: none; z-index: 100;
+  -webkit-transform: translateY(74px);
+  -moz-transform: translateY(74px);
+  -ms-transform: translateY(74px);
+  transform: translateY(74px);
+}
+
+li.sublista { width: 200px; float: left; position: relative;}
+li.sublista > ul { width: 180px; float: left; position: relative; margin: 10px;}
+li.sublista > ul span { width: 100%; font-size: 14px; font-weight: bold; float: left; text-transform: uppercase; color: #ff7800;}
+li.sublista > ul li { width: 100%; float: left; position: relative;}
+li.sublista > ul li a { color: #FFFFFF; font-size: 12px; padding-left: 2px;}
+
+
+ul.menu li ul.submenu2 { position: absolute; left: -229px;}
+
+ul.menu li:hover ul, ul.menu li.over ul { display: block;}
 
 
 
@@ -209,9 +248,9 @@ li.lista_menu_alimentos { width: 178px; height: 87px; background: url(../images/
 li.lista_menu_alimentos:hover { background: url(../images/alimentoHover.png) no-repeat;}
 li.lista_menu_produtos { width: 178px; height: 87px; background: url(../images/produtos.png) no-repeat; float: left;}
 li.lista_menu_produtos:hover { background: url(../images/produtosHover.png) no-repeat;}
-#box_menu li.lista_menu_cafe:hover ul.dropdownCafe{display: block;}
-#box_menu li.lista_menu_alimentos:hover ul.dropdownAlimento{display: block;}
-#box_menu li.lista_menu_produtos:hover ul.dropdownProduto{display: block;}
+#box_menu li.lista_menu_cafe:hover ul.dropdownCafe{ display: block;}
+#box_menu li.lista_menu_alimentos:hover ul.dropdownAlimento{ display: block;}
+#box_menu li.lista_menu_produtos:hover ul.dropdownProduto{ display: block;}
 
 
 /*#topo_menu { width: 100%; min-width: 1024px; border-bottom: solid 1px #CCC; float: left; padding-bottom: 30px; margin-bottom: 30px;margin-top:71px;}
@@ -951,21 +990,23 @@ input.LimparFormInst:hover { background: #351903;}
 
 /* Hack Chorme */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  input.lupa_topo { margin-top: 2px;}
+
+
+
   span.tt_top_list, .tt_top_list_right { font-weight: 500;}
-  input.ok_footer{ margin-top: 3px;}
+  input.ok_footer { margin-top: 3px;}
   input.lupa_footer { margin-left: -5px;}
   button.carrinhoCompras_categoria { padding: 6px 20px 8px 36px;}
   button.carrinhoCompras_categoria_off { padding: 16px 22px 16px 36px;}
-  img.dt_cesta { margin-top: -8px;}
  }
 
 /* Hack ie10 */
+.ie10 input.lupa_topo { height: 45px;}
 .ie10 span.tt_top_list, .tt_top_list_right { font-weight: 500;}
-.ie10 input.lupa_topo { height: 55px !important;}
 .ie10 input.lupa_footer { width: 62px; height: 61px !important;}
 .ie10 button.carrinhoCompras_categoria { padding: 6px 20px 8px 36px;}
 .ie10 button.carrinhoCompras_categoria_off { padding: 16px 22px 16px 36px;}
-.ie10 img.dt_cesta { margin-top: -8px;}
 .ie10 li.ListaDaCesta2 { height: 99px;}
 
 
@@ -981,9 +1022,6 @@ x:-o-prefocus, button.carrinhoCompras_categoria {
 }
 x:-o-prefocus, button.carrinhoCompras_categoria_off { 
   padding: 16px 22px 16px 36px; 
-}
-x:-o-prefocus, img.dt_cesta {
- margin-top: -7px;
 }
 x:-o-prefocus, ul.dropdownCafe, ul.dropdownAlimento, ul.dropdownProduto { 
  margin-top: 47px;

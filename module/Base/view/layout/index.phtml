@@ -12,6 +12,7 @@
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
                         //->prependStylesheet($this->basePath() . '/js/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.min.css')
                         ->prependStylesheet($this->basePath() . '/js/jquery-ui-1.10.3/themes/base/jquery-ui.css')
+                        ->prependStylesheet($this->basePath() . '/css/style-icon.css')
                         ->prependStylesheet($this->basePath() . '/css/style.css')
                         ?>
         <script>var basePatch  = '<?=$this->basePath()?>'</script>
@@ -19,6 +20,7 @@
         <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
                                       ->prependFile($this->basePath() . '/js/bootstrap.min.js')
                                       ->prependFile($this->basePath() . '/js/usuario.js')
+                                      ->prependFile($this->basePath() . '/js/demo.js')
                                       ->prependFile($this->basePath() . '/js/publico.js')
                                       ->prependFile($this->basePath() . '/js/jquery.maskedinput.min.js')
                                       //->prependFile($this->basePath() . '/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js')
@@ -71,7 +73,6 @@
 					?>
                   <p class="mc">MINHA CESTA</p>
                    <p class="valor_total"><?=$this->carrinhoLista['valorTotal']?></p>
-                    <img class="dt_cesta" src="<?=$this->basePath()?>/images/dt_cesta.png">
 						<?
 						}
 						else
@@ -80,21 +81,23 @@
 						?>
 						<p class="mc">MINHA CESTA</p>
 						<p class="valor_total"><?=$this->carrinhoLista['valorTotal']?></p>
-					 <img class="dt_cesta" src="<?=$this->basePath()?>/images/dt_cesta.png">	
 						<?
 						}
 						?>
                 </span>
               </a>
-           </div>
+
 
               <div id="BoxCestaForm">    
-                <div id="box_compras" style="display:none;">
+                <div id="box_compras">
                   <?
                     print  $this->partial("layout/carrinho",array("carrinhoLista" => $this->carrinhoLista));
                   ?>                
                 </div>
               </div>
+
+           </div>
+
       </div>
         
      
@@ -160,22 +163,90 @@
         <h1>
           <a href="<?=$this->basePath()?>">SELETO ALIMENTOS</a>
         </h1>
-        <p>Televendas: 611-3143</p>
+        <p>Televendas: (11) 9611-3143</p>
         <form action="<?php echo $this->url('publico-busca-produto'); ?>" method="get">            
-          <input placeholder="buscar produto" class="search_topo" id="search" name="p">
+          <input placeholder="Procure por código, nome, marca..." class="search_topo" id="search" name="p">
           <input type="submit" value="Pesquisar" class="lupa_topo">
         </form>
       </div>
 
-
-
-
-
-
-
       <div id="box_menu">
-        
+
+        <ul class="menu">
+          <li><a class="icon-googleplus bk-icones lista" href=""></a>
+            <ul class="submenu">
+               <li class="sublista">
+                  <ul>
+                    <span>Titulo</span>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                  </ul>
+               </li>
+
+               <li class="sublista">
+                  <ul>
+                    <span>Titulo</span>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                  </ul>
+               </li>
+
+               <li class="sublista">
+                  <ul>
+                    <span>Titulo</span>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                  </ul>
+               </li>
+
+               <li class="sublista">
+                  <ul>
+                    <span>Titulo</span>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                  </ul>
+               </li>
+            </ul>
+          </li>
+
+          <li><a class="icon-anchor bk-icones lista" href=""></a></li>
+
+          <li><a class="icon-zoomin2 bk-icones lista" href=""></a></li>
+
+          <li><a class="icon-book2 bk-icones lista" href=""></a></li>
+
+          <li><a class="icon-plus2 bk-icones lista" href=""></a></li>
+
+          <li><a class="icon-lightbulb bk-icones lista" href=""></a></li>
+          <li><a class="icon-anchor bk-icones lista" href=""></a></li>
+          <li><a class="icon-zoomin2 bk-icones lista" href=""></a></li>
+          <li><a class="icon-book2 bk-icones lista" href=""></a></li>
+          <li><a class="icon-plus2 bk-icones lista" href=""></a></li>
+          <li><a class="icon-lightbulb bk-icones lista" href=""></a></li>
+          <li><a class="icon-anchor bk-icones lista" href=""></a></li>
+          <li><a class="icon-zoomin2 bk-icones lista" href=""></a></li>
+          <li><a class="icon-book2 bk-icones lista" href=""></a></li>
+
+        </ul>
+
       </div>
+
    </section>
 </div>
 
